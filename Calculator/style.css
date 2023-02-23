@@ -1,0 +1,20 @@
+.calculator{
+    background-color: rgb(124, 113, 113);
+    margin-left:390px;
+}
+button{
+    height:50px;
+    width: 70px;
+    text-align: center ;
+}
+input[type=text]{
+    height:50px;
+    width: 210px;
+    text-align: right ;
+}
+.calc{
+    font-size: h1;
+    width: fit-content;
+    margin-left:430px;
+    margin-top: 100px;
+}

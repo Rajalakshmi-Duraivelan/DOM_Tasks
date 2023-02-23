@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form And Table</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 id="title">DOM Manipulation with Forms</h1>
+    <p id="description">The form contains First Name, Last Name, Address, Pincode, Gender,Food, State, Country fields. After submitting the fields the values will be showed in a table </p>
+    <div class="parent">
+        <div id="child1">
+            <form class="newForm" id="form"><div class="form-group">
+                <label>First Name :&emsp;&nbsp;</label><input id="first-name" type="text" placeholder="Enter First Name" required><br><br>
+                <label>Last Name :&emsp;&nbsp;</label><input id="last-name" type="text" placeholder="Enter Last Name" required><br><br>
+                <label>Address :&emsp;&emsp;&nbsp;</label><textarea id="address" placeholder="Enter Address" required rows="4" cols="50"> </textarea>
+                <label>Pincode :&emsp;&emsp;&nbsp;</label><input id="pincode" type="text" placeholder="Enter Pincode" required><br><br>
+                <label>Gender :&emsp;&emsp; </label>
+                <input id="f" type="radio" name="gender" value="Female" required><label for="f">Female</label><br>
+                &emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;&nbsp;
+                <input id="m" type="radio" name="gender" value="Male" required><label for="m">Male</label><br>
+                &emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;&nbsp;
+                <input id="t" type="radio" name="gender" value="Transgender" required><label for="t">Transgender</label><br><br>
+                <label>Food :&emsp;&emsp;&emsp;</label>
+                <input id="ch1" type="checkbox" name="food" value="Briyani"><label for="ch1">Briyani</label><br>
+                &emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;&nbsp;
+                <input id="ch2" type="checkbox" name="food" value="Curd Rice"><label for="ch2">Curd Rice</label><br>
+                &emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;&nbsp;
+                <input id="ch3" type="checkbox" name="food" value="Fried Rice"><label for="ch3">Fried Rice</label><br>
+                &emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;&nbsp;
+                <input id="ch4" type="checkbox" name="food" value="Pulav"><label for="ch4">Pulav</label><br>
+                &emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;&nbsp;
+                <input id="ch5" type="checkbox" name="food" value="Sambar Rice"><label for="ch5">Sambar Rice</label><br><br>
+                <label>State : &emsp;&emsp;&emsp;&nbsp;</label> <input id="st" type="text" placeholder="Enter State" required><br><br>
+                <label>Country :&emsp;&emsp;</label> <input id="cntry" type="text" placeholder="Enter Country" required><br><br>
+            </div>
+            <div class="submitDiv">
+                <button type="submit" class="btn btn-primary" id="submit"><b>Submit</b></button><br><br>
+            </div>
+            </form>
+        </div><br><br>
+        <div class="tableDiv">
+            <table class="table" hidden="true">
+            <thead>
+                <tr>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Gender</th>
+                    <th>Food</th>
+                    <th>Address</th>
+                    <th>Pincode</th>
+                    <th>State</th>
+                    <th>Country</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+            </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+<script src="https://app.zenclass.in/sheets/v1/js/zen/suite/bundle.js"></script>
+<script src="script.js"></script>
+
+<link rel="stylesheet" href="style.css">
+</html>
